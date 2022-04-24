@@ -1,0 +1,172 @@
+body {
+  margin: 40px;
+  background-color: lightpink;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 800px 800px;
+  grid-gap: 10px;
+  background-color: lightpink;
+}
+
+.box {
+  background-color: lightblue;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.a {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .b {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
+  .d {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .e {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+img{
+  border: 7px solid #555;
+}
+
+h1{
+  color: paleturquoise;
+  font-size:250%
+}
+h3{
+    color: rgb(196,164,132);
+    font-family: "Berkshire", sans-serif;
+    font-size: 175%
+  }
+h4{
+  font-family: "Lucida Handwriting", seriff;
+  color: rgb(196,164,132);
+  text-align: center;
+  
+}
+.introduction{
+  font-size:125%;
+}
+p
+{
+  color: aqua;
+}
+.imageInformation
+{
+  font-family: "Berkshire", sans-serif;
+  color: darkgray;
+  font-size:40%;
+}
+li{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 85%;
+  color: #white;
+}
+
+fieldset {
+  background-color: lightpink;
+}
+
+legend {
+  border: 1px solid black;
+  background-color: lightpink;
+}
+
+
+.text_shadows {
+  text-shadow: 3px 3px 0 black, 6px 6px 0 grey,
+    9px 9px white 12px 12px 0 lightblue;
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  margin: 0;
+  color: rgb(196,164,132);
+  //color: transparent;
+  //background-color: white;
+  //background-clip: text;
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 black;
+  }
+  20% {
+    text-shadow: 3px 3px 0 black,
+      6px 6px 0 grey;
+  }
+  30% {
+    text-shadow: 3px 3px 0 black,
+      6px 6px 0 grey, 9px 9px white;
+  }
+  40% {
+    text-shadow: 3px 3px 0 black,
+      6px 6px 0 grey), 9px 9px white,
+      12px 12px 0 lightblue);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(black),
+      6px 6px 0 var(grey), 9px 9px var(white),
+      12px 12px 0 var(lightblue);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(black),
+      6px 6px 0 var(grey), 9px 9px var(white),
+      12px 12px 0 var(lightblue);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(black),
+      6px 6px 0 var(grey), 9px 9px var(white);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(black),
+      6px 6px 0 var(grey);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(black);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
